@@ -1,0 +1,48 @@
+ALGORITHM
+PROCEDURE Dot product(
+    n : integer
+    var v1 : ARRAY_OF INTEGER [n]
+    var v2 : ARRAY_OF INTEGER [n]
+    ps = 0 : integer
+    s = 0 : integer
+)
+BEGIN
+for i from 0 to n-1 step 1 do
+S = V1[i] * v2[i]
+ps = ps + s
+ENDFOR
+if(ps == 0)
+write(v1 and v2 are orthogonal)
+ENDIF
+else
+write(v1 and v2 are not orthogonal)
+END
+
+
+function Dotproduct(
+     v1 : ARRAY_OF INTEGER [n]
+     v2 : ARRAY_OF INTEGER [n]
+)
+var n : integer
+var ps = 0 : integer
+var s = 0 : integer
+var : ps 
+BEGIN
+for i from 0 to n-1 step 1 do
+S = V1[i] * v2[i]
+ps = ps + s
+
+ENDFOR
+return (ps)
+END
+
+ALGORITHM
+ 
+BEGIN
+R = Dotproduct(A,B)
+if(R == 0)
+write(A and B are orthogonal)
+ENDIF
+else
+write(A and B are not orthogonal)
+END
